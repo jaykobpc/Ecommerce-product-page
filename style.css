@@ -507,6 +507,21 @@ main {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  /** screen max with 400px **/
+  /** screen max with 600px **/
+  /** screen max with 900px **/
+  /** screen max with 1200px **/
+  /** screen max with 1800px **/
+}
+@media only screen and (max-width: 56.25em) {
+  .containerct__carousel__leftbtn {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 .containerct__carousel__rightbtn {
   background-color: var(--White);
@@ -520,6 +535,21 @@ main {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  /** screen max with 400px **/
+  /** screen max with 600px **/
+  /** screen max with 900px **/
+  /** screen max with 1200px **/
+  /** screen max with 1800px **/
+}
+@media only screen and (max-width: 56.25em) {
+  .containerct__carousel__rightbtn {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 .containerct__imglist {
   display: flex;

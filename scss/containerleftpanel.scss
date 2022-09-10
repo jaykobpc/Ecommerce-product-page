@@ -25,6 +25,16 @@
             align-items: center;
             border-radius: 50%;
             cursor: pointer;
+            //
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+
+            @include respond(tab-port) {
+                visibility: visible;
+                opacity: 1;
+                pointer-events: auto;
+            }
         }
 
         &__rightbtn {
@@ -39,6 +49,16 @@
             align-items: center;
             border-radius: 50%;
             cursor: pointer;
+            //
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+
+            @include respond(tab-port) {
+                visibility: visible;
+                opacity: 1;
+                pointer-events: auto;
+            }
         }
     }
 
