@@ -1,0 +1,20 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}

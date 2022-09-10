@@ -1,0 +1,93 @@
+.cartlist {
+    box-shadow: 0px 2px 13px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--White);
+    position: absolute;
+    right: 100px;
+    top: 80px;
+    z-index: 10;
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    border-radius: 4px;
+
+    @include respond(phone) {
+        right: 0;
+        width: 100%;
+    }
+
+    &__titlebox {
+        padding: 13px 15px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: var(--Grayish-blue);
+            height: 1px;
+            width: 100%;
+        }
+    }
+
+    &__banner {
+        text-align: center;
+    }
+
+    &__content {
+        padding: 20px 15px;
+    }
+
+    &__listview {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 15px;
+
+        img {
+            width: 60px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        &__textview {
+            flex: 1;
+            padding: 0 12px;
+            justify-content: flex-start;
+
+            &__label {
+                span {
+                    margin: 0 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &__btndelete {
+            justify-content: flex-start;
+            width: 30px;
+            padding: 5px;
+            height: fit-content;
+            border: none;
+            background-color: inherit;
+            cursor: pointer;
+        }
+    }
+
+    &__btncheckout {
+        background-color: var(--Orange);
+        color: var(--White);
+        border: none;
+        width: 100%;
+        height: 50px;
+        font-weight: 700;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}

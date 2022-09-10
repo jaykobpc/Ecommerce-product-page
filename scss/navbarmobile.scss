@@ -1,0 +1,49 @@
+.mobilenav {
+    background: linear-gradient(rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15));
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    //
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &__wrapper {
+        background-color: var(--White);
+        height: 100%;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        transition: all 0.2s ease;
+        transform: translateX(-600px);
+    }
+
+    &__listview {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        &__item {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--Very-dark-blue);
+            text-decoration: none;
+            margin: 10px 0;
+        }
+    }
+}
+
+.nav__open.mobilenav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.nav__open .mobilenav__wrapper {
+    transform: translateX(0);
+}

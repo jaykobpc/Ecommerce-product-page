@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
+}
+
+.containerct {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 80px 10px;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    &__img {
+        border-radius: 12px;
+        margin-bottom: 10px;
+
+        @include respond(tab-port) {
+            border-radius: unset;
+        }
+    }
+}
